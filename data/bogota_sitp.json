@@ -1,0 +1,99 @@
+{
+  "stations": {
+    "Portal del Norte": { "lat": 4.7606, "lon": -74.0467, "desc": "Terminal norte del sistema, conecta con alimentadoras." },
+    "Toberín": { "lat": 4.7363, "lon": -74.0453, "desc": "Troncal Autonorte." },
+    "Calle 146": { "lat": 4.7271, "lon": -74.0462, "desc": "Autonorte." },
+    "Calle 116/P. Pepe Sierra": { "lat": 4.7088, "lon": -74.0468, "desc": "Punto importante en Autonorte." },
+    "Virrey": { "lat": 4.6703, "lon": -74.0598, "desc": "NQS norte, cercano a Parque El Virrey." },
+    "Héroes": { "lat": 4.6678, "lon": -74.0593, "desc": "Intercambio Autonorte ↔ NQS/Suba." },
+    "Calle 100": { "lat": 4.6794, "lon": -74.0561, "desc": "NQS norte." },
+    "Calle 85": { "lat": 4.6670, "lon": -74.0615, "desc": "NQS norte, zona comercial." },
+    "Calle 72": { "lat": 4.6589, "lon": -74.0627, "desc": "NQS/Caracas, alto flujo." },
+
+    "Suba - Calle 95": { "lat": 4.6930, "lon": -74.0755, "desc": "Troncal Suba." },
+    "Shaio": { "lat": 4.7080, "lon": -74.0790, "desc": "Troncal Suba." },
+    "21 Ángeles": { "lat": 4.7215, "lon": -74.0845, "desc": "Troncal Suba." },
+    "La Campiña": { "lat": 4.7357, "lon": -74.0905, "desc": "Troncal Suba." },
+    "Portal Suba": { "lat": 4.7451, "lon": -74.0954, "desc": "Terminal occidental Suba." },
+
+    "Portal 80": { "lat": 4.7065, "lon": -74.1105, "desc": "Terminal Calle 80." },
+    "Quirigua": { "lat": 4.7108, "lon": -74.1062, "desc": "Calle 80." },
+    "Av. 68 (C80)": { "lat": 4.6850, "lon": -74.0900, "desc": "Calle 80 con Av. 68." },
+
+    "Portal Américas": { "lat": 4.6290, "lon": -74.1600, "desc": "Terminal Américas." },
+    "Biblioteca Tintal": { "lat": 4.6430, "lon": -74.1440, "desc": "Américas." },
+    "Banderas": { "lat": 4.6390, "lon": -74.1260, "desc": "Américas." },
+    "Marsella": { "lat": 4.6320, "lon": -74.1170, "desc": "Américas." },
+
+    "Portal Sur": { "lat": 4.5820, "lon": -74.1470, "desc": "Terminal sur (NQS sur)." },
+    "Perdomo": { "lat": 4.6005, "lon": -74.1515, "desc": "NQS sur." },
+    "Sevillana": { "lat": 4.6110, "lon": -74.1440, "desc": "NQS sur." },
+    "General Santander": { "lat": 4.6185, "lon": -74.1330, "desc": "NQS sur, conexión con Tunal." },
+
+    "Portal Tunal": { "lat": 4.5665, "lon": -74.1250, "desc": "Terminal Tunal." },
+    "Venecia": { "lat": 4.6000, "lon": -74.1280, "desc": "Eje sur." },
+    "Alquería": { "lat": 4.6075, "lon": -74.1230, "desc": "Eje sur." },
+
+    "Portal Usme": { "lat": 4.5100, "lon": -74.1050, "desc": "Terminal Usme." },
+    "Molinos": { "lat": 4.5570, "lon": -74.1065, "desc": "Eje suroriente (Usme)." },
+    "Country Sur": { "lat": 4.5650, "lon": -74.1100, "desc": "Eje suroriente (conexión hacia Tunal)." },
+
+    "Portal 20 de Julio": { "lat": 4.5710, "lon": -74.0860, "desc": "Terminal 20 de Julio." },
+    "El Consuelo": { "lat": 4.5560, "lon": -74.0875, "desc": "Eje oriente 20 de Julio." }
+  },
+
+  "links": [
+   
+    ["Portal del Norte", "Toberín", "AUTONORTE", 5],
+    ["Toberín", "Calle 146", "AUTONORTE", 4],
+    ["Calle 146", "Calle 116/P. Pepe Sierra", "AUTONORTE", 7],
+   
+    ["Calle 116/P. Pepe Sierra", "Virrey", "CONEXION", 6],
+    ["Héroes", "Suba - Calle 95", "CONEXION", 6],
+    ["Calle 116/P. Pepe Sierra", "Héroes", "AUTONORTE", 6],
+
+
+    ["Héroes", "Calle 100", "NQS", 4],
+    ["Calle 100", "Virrey", "NQS", 3],
+    ["Virrey", "Calle 85", "NQS", 2],
+    ["Calle 85", "Calle 72", "NQS", 3],
+
+
+    ["Suba - Calle 95", "Shaio", "SUBA", 5],
+    ["Shaio", "21 Ángeles", "SUBA", 4],
+    ["21 Ángeles", "La Campiña", "SUBA", 4],
+    ["La Campiña", "Portal Suba", "SUBA", 5],
+
+
+    ["Portal 80", "Quirigua", "C80", 4],
+    ["Quirigua", "Av. 68 (C80)", "C80", 6],
+    ["Av. 68 (C80)", "Héroes", "CONEXION", 7],
+
+
+    ["Portal Américas", "Biblioteca Tintal", "AMERICAS", 5],
+    ["Biblioteca Tintal", "Banderas", "AMERICAS", 6],
+    ["Banderas", "Marsella", "AMERICAS", 4],
+    ["Marsella", "Calle 72", "CONEXION", 10],  
+
+
+    ["General Santander", "Sevillana", "NQS", 4],
+    ["Sevillana", "Perdomo", "NQS", 5],
+    ["Perdomo", "Portal Sur", "NQS", 5],
+
+   
+    ["Portal Tunal", "Venecia", "TUNAL", 6],
+    ["Venecia", "Alquería", "TUNAL", 4],
+    ["Alquería", "General Santander", "CONEXION", 5],
+
+   
+    ["Portal Usme", "Molinos", "USME", 7],
+    ["Molinos", "Country Sur", "USME", 5],
+    ["Country Sur", "Portal Tunal", "CONEXION", 6],
+
+   
+    ["Portal 20 de Julio", "El Consuelo", "20DEJULIO", 4],
+    ["El Consuelo", "Country Sur", "CONEXION", 8]
+  ],
+
+  "transfer_penalty": 4
+}
